@@ -2,7 +2,7 @@
 
 [![shellcheck](https://github.com/terem42/zfs-hetzner-vm/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/terem42/zfs-hetzner-vm/actions/workflows/shellcheck.yml)
 
-Scripts to install Debian 10, 11, 12 or Ubuntu 18 LTS, 20 LTS, 22 LTS with ZFS root on Hetzner root servers (virtual and dedicated).<br/>
+Scripts to install Debian 10, 11, 12 or Ubuntu 18 LTS, 20 LTS, 22 LTS, 24 LTS with ZFS root on Hetzner root servers (virtual and dedicated).<br/>
 __WARNING:__ all data on the disk will be destroyed.
 
 ## How to use:
@@ -46,6 +46,12 @@ Ubuntu 22 LTS minimal setup with SSH server
 
 ````bash
 wget -qO- https://raw.githubusercontent.com/terem42/zfs-hetzner-vm/master/hetzner-ubuntu22-zfs-setup.sh | bash -
+````
+
+Ubuntu 24 LTS minimal setup with SSH server
+
+````bash
+wget -qO- https://raw.githubusercontent.com/lucgirardin/zfs-hetzner-vm/master/hetzner-ubuntu24-zfs-setup.sh | bash -
 ````
 
 Answer script questions about desired hostname and ZFS ARC cache size.
